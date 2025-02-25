@@ -1,0 +1,17 @@
+using System;
+
+class Program
+{
+    // Función pura que calcula el factorial de manera recursiva
+    static long Factorial(int n) => (n <= 1) ? 1 : n * Factorial(n - 1);
+
+    static void Main()
+    {
+        Console.Write("\n\tIngrese un número: ");
+        int numero = int.Parse(Console.ReadLine());
+
+        Console.WriteLine($"\n\tEl factorial de {numero} es: {Factorial(numero)}");
+
+        Console.ReadKey(true);
+    }
+}
